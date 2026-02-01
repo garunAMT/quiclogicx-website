@@ -1,5 +1,6 @@
 import { Instagram, Linkedin, Twitter } from 'lucide-react';
 import logo from '@/assets/logo.png';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -20,9 +21,11 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-12 pb-12 border-b border-background/20">
           <div>
-            <img 
+            <Image 
               src="https://res.cloudinary.com/dtipcangs/image/upload/v1769962469/Quicklogix_pso4ul.png"
               alt="Company Logo" 
+              height={100}
+              width={100}
               className="h-28 w-auto invert"
             />
           </div>
